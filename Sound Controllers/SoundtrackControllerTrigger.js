@@ -6,14 +6,10 @@ var PlayOnce : boolean = true;
 var SoundtrackObject : GameObject;
 
 function OnTriggerEnter(collider : Collider) {
-	if(!PlayOnce) {
-		if(collider.gameObject.tag == "Player" && !isTriggered) {
+	if(collider.gameObject.tag == "Player") {
+		SoundtrackObject.GetComponent(SoundtrackController).playTrack(TrackID);
+		if(PlayOnce && !isTriggered) {
 			isTriggered = true;
-			SoundtrackObject.GetComponent(SoundtrackController).playTrack(TrackID);
-		}
-	} else {
-		if(collider.gameObject.tag == "Player") {
-			SoundtrackObject.GetComponent(SoundtrackController).playTrack(TrackID);
 		}
 	}
 }
