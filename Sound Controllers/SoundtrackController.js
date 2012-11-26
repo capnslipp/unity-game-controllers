@@ -23,7 +23,6 @@ var TransitionDelay : float = 1.0;
 @HideInInspector var track_id : int;
 
 function Start() {
-
 	// Convert speed into actual seconds
 	fadeout_speed_fix = 1 / FadeOutSpeed;
 	fadein_speed_fix = 1 / FadeInSpeed;
