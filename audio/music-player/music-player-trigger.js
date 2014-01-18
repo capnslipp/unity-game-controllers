@@ -1,3 +1,9 @@
+/* Plays music based on triggers
+ *
+ * To-Do:
+ * - Rewrite script to C#
+ */
+
 #pragma strict
 
 var TrackID = 0;

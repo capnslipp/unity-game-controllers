@@ -1,10 +1,10 @@
-/*	Reads saved settings data from file and applies to client
- *	If file doesn't exist (or data is corrupt), enables default values
+/* Reads saved settings data from file and applies to client
+ * If file doesn't exist (or data is corrupt), enables default values
  *
- *	To-Do:
- *	- Make an option default resolution auto-detect
- *	- Make volume options
- *	- Make better exception handling
+ * To-Do:
+ * - Make an option default resolution auto-detect
+ * - Make volume options
+ * - Make better exception handling
  */
 
 using UnityEngine;
@@ -284,9 +284,7 @@ public class SettingsInit : MonoBehaviour {
 		}
 	}
 
-	/* Rebuilds settings file, writes defaults, applies settings
-	 *	@params: none
-	 */
+	/* Rebuilds settings file, writes defaults, applies settings */
 	public void Rebuild() {
 		failedBuildCount++;
 
